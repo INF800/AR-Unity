@@ -1,0 +1,45 @@
+-> Edit>Project Settings>Player>Vuforia Argumented reality
+
+-> GameObject>Vuforia>ARcamera>Import
+
+-> Delete Main Camera
+
+-> GameObject>Vuforia>Image (to create Image target)
+
+-> site: Get Development Key(https://developer.vuforia.com/vui/develop/licenses/free/new) > 'APPNAME'>CONFIRM
+
+-> site: copy licence key > unity: AR Camera > open vuforia configuration > App licence key > Paste
+
+-> site: Target Manager>add database>'APPNAME'>Device>Create>Add target>Type>File>1unit=1meter>'anyname'>add
+
+( TAKE HIGH CONTRAST IMAGES ---> THEY ARE HIGHLY AUGMENTABLE )
+
+-> site: Download database(All)>unity editor>open with unity editor>unity:Import
+
+-> unity: ImageTarget>Database:'appname'; imagetarget:target2
+
+-> ImageTarget(left click) > 3d object > quad > rotation(x) > scale > add component > video player > 
+
+-> Drag drop videos into asstes/resources
+
+-> quad > (drag-to) Video Clip
+
+"You must load and activate database contain........."
+
+-> AR CAmera>open vuforia config> load ar_demo database > activate > deactivate vuforia and it's db
+
+
+
+--> [PLAY]
+
+
+-> File>save scene as> 'scene'
+-> file>build settings>add open scenes
+-> android>switch device
+-> player settings>
+		xr settings: vuforia augnented reality
+		other settings: package name = com.companyname.appname
+				api compatibility level: .net 2.0
+				android tv compatibility: UNCHECKED
+				android game: UNCHECKED
+		Change company and product name
